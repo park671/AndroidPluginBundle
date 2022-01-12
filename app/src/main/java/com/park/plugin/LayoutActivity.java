@@ -15,11 +15,7 @@ public class LayoutActivity extends BaseActivity {
     setContentView(R.layout.activity_main);
 
     mButton = findViewById(R.id.testButton);
-    mButton.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Toast.makeText(LayoutActivity.this, "随便弹点什么内容", Toast.LENGTH_SHORT).show();
-      }
-    });
+    mButton.setOnClickListener(
+        v -> Toast.makeText(LayoutActivity.this, "随便弹点什么内容", Toast.LENGTH_SHORT).show());
   }
 }
