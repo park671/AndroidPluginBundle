@@ -5,5 +5,8 @@
     <activity
       android:label="plugin main"
       android:name=".MainActivity"/>
+    <activity
+      android:label="plugin webview activity"
+      android:name=".TestActivity"/>
   </application>
 </manifest>

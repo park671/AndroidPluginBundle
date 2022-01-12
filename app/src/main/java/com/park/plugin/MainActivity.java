@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,6 +32,12 @@ public class MainActivity extends BaseActivity {
     linearLayout.addView(imageView);
     imageView.setImageDrawable(getResources().getDrawable(R.drawable.test_img));
     imageView.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, LayoutActivity.class)));
+
+    Button button = new Button(MainActivity.this);
+    button.setText("start test activity.");
+    button.setAllCaps(false);
+    linearLayout.addView(button);
+    button.setOnClickListener(v->startActivity(new Intent(MainActivity.this, TestActivity.class)));
 
     setContentView(linearLayout);
   }
