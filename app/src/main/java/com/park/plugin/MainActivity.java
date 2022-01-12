@@ -1,6 +1,7 @@
 package com.park.plugin;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.ViewGroup;
@@ -23,6 +24,7 @@ public class MainActivity extends BaseActivity {
     textView.setGravity(Gravity.CENTER);
     linearLayout.addView(textView);
     textView.setText("I am plugin activity.");
+    textView.setTextColor(Color.BLUE);
 
     ImageView imageView = new ImageView(MainActivity.this);
     imageView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
