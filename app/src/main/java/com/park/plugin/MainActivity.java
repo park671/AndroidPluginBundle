@@ -30,7 +30,7 @@ public class MainActivity extends BaseActivity {
     ImageView imageView = new ImageView(MainActivity.this);
     imageView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
     linearLayout.addView(imageView);
-    imageView.setImageDrawable(getResources().getDrawable(R.drawable.test_img));
+    imageView.setImageDrawable(getResources().getDrawable(R.drawable.smg));
     imageView.setOnClickListener(v-> startActivity(new Intent(MainActivity.this, LayoutActivity.class)));
 
     Button button = new Button(MainActivity.this);
